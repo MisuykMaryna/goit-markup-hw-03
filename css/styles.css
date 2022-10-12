@@ -26,14 +26,15 @@ display:block;
 height: auto;
 }
 .container {
-    width: 100%;
-    max-width:1200px;
+    width:1200px;
     padding: 0 15px;
     margin: 0 auto;
 
 }
 ul {
     list-style:none;
+    padding-left: 0;
+    margin: 0;
 }
 h1,h2,h3,h4,h5,h6,p {
     margin-top: 0;
@@ -62,6 +63,7 @@ text-decoration: none;
 }
 .section-tasks {
     padding-top: 0;
+    padding-bottom: 94px;
 }
 
 .logo-link {
@@ -110,8 +112,6 @@ display: block;
 .header {
     display: flex;
     margin-left: auto;
-    padding-left:200px;
-
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -123,7 +123,6 @@ display: block;
 }
 .list {
     display: flex;
-    outline: 1px solid var(--color-caption);
     margin-left: 93px;
     margin-top: 0;
     margin-bottom: 0;
@@ -133,7 +132,6 @@ display: block;
 .section-hero {
 background-color:var(--color-fon);
 text-align: center;
-width: 1600px;
 padding-top: 200px;
 padding-bottom: 200px;
 }
@@ -232,38 +230,37 @@ margin-top: 0;
     padding-bottom: 0;
 }
 .section-heading-desc {
-    padding:30px;
-    box-shadow: 3px 0px 1px rgba(0, 0, 0, 0.12),
-    1px 0px 1px rgba(0, 0, 0, 0.14),
-    1px 0px 2px rgba(0, 0, 0, 0.2);
-    
+    text-align: center;
+    padding:30px;   
     }
 
 .section-list {
     display: flex;
     align-items: center;
     gap: 30px;
-   
     }
-
-
 .section-photo-list {
     display: flex;
-    gap: 45px;
-    
+    gap: 30px;    
 }
-
 .photo {
     background-color: var(--color-caption);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
 }
-
 .section-portrait {
     background-color: var(--fon-button);
-    margin-top: 172px;
-    margin-bottom: 50px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 /* cторінка 2 */
+.section-page {
+ padding-top: 94px;
+ padding-bottom: 94px;
+}
 .five-button {
     color: var(--color-link);
     background-color: var(--fon-button);
@@ -276,23 +273,28 @@ margin-top: 0;
 
     padding: 6px 22px;
     border-radius: 4px;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-        0px 1px 2px rgba(0, 0, 0, 0.8),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
+    
 }
 .five-button:hover {
     color: var(--color-caption);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.8),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .five-button:focus {
     color: var(--accent-color);
     background-color: var(--color-caption);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.8),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button-page {
     display: flex;
     justify-content: center;
     gap: 8px;
     margin-bottom: 33px;
+   
 }
 .section-subject{
     color: var(--color-link);
@@ -307,6 +309,7 @@ margin-top: 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
+    align-items: center;
     margin-top: 10px;
     padding-bottom: 0;
 }
@@ -314,23 +317,24 @@ margin-top: 0;
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    gap: 2px;
-    flex-basis: calc((100%-60%)/3);
+    gap: 30px;
+    flex-basis: calc((100%-60px)/3);
 }
 .section {
     background-color:var(--color-caption);
-    padding-top:100px;
-    padding-bottom: 188px;
+    padding-top:94px;
+    padding-bottom:94px;
 }
 .flex-element {
+    text-align: center;
     padding: 30px;
-    border: 1px solid #EEEEEE
+    border: 1px solid #EEEEEE;
+    border-top: 0;
 }
 
 /* footer */
 .footer{
     background-color:var(--color-fon);
-    width: 1600px;
     padding: 60px 0;
     margin-top: 0;
 }
@@ -341,14 +345,17 @@ margin-top: 0;
         font-size: 26px;
         line-height: 1.17;
         text-decoration: none;
-}
-
-.footer.link-logo {
         display: block;
-    margin-bottom: 20px;
+      margin-bottom:20px;
 }
 .footer-span {
     color: var(--color-caption);
+}
+.services {
+    margin-bottom: 9px;
+}
+.services:last-child{
+    margin-bottom: 0;
 }
 .footer-address {
     color: var(--color-caption);
@@ -370,7 +377,5 @@ margin-top: 0;
      color: var(--accent-color);
 }
 .address-link {
-    display: flex;
     flex-direction: column;
-    gap: 9px;
 }
